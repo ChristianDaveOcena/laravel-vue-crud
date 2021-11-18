@@ -66,9 +66,9 @@ import pagination from 'laravel-vue-pagination'
         methods: {
             getProducts(page) {
             
-            if (typeof page === "undefined") {
-                page = 1;
-            }
+            // if (typeof page === "undefined") {
+            //     page = 1;
+            // }
               this.axios.get('http://127.0.0.1:8000/api/products?page=' + page)
                   .then(response => {
                       this.products = response.data;

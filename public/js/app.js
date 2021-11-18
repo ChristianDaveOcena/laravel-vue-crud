@@ -2335,10 +2335,9 @@ __webpack_require__.r(__webpack_exports__);
     getProducts: function getProducts(page) {
       var _this = this;
 
-      if (typeof page === "undefined") {
-        page = 1;
-      }
-
+      // if (typeof page === "undefined") {
+      //     page = 1;
+      // }
       this.axios.get('http://127.0.0.1:8000/api/products?page=' + page).then(function (response) {
         _this.products = response.data;
       });
